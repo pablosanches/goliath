@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="http://i.imgur.com/va7E8tX.png" width="160px">
+    <img src="http://i.imgur.com/va7E8tX.png" width="300px">
 </p>
 
 A simple framework to facilitate the development of CLI applications based on PHP command.
