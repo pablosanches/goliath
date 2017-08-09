@@ -2,6 +2,8 @@
     <img src="http://i.imgur.com/va7E8tX.png" width="300px">
 </p>
 
+[![Build Status](https://travis-ci.org/pablosanches/goliath.svg?branch=master)](https://travis-ci.org/pablosanches/goliath)
+
 A simple framework to facilitate the development of CLI applications based on PHP command.
 
 Features
