@@ -5,9 +5,9 @@
 $loader = require __DIR__ . '/../vendor/autoload.php';
 $loader->add('Goliath', __DIR__);
 
-$app = new Goliath\Cli();
-
 use Goliath\Cli;
+
+$app = new Goliath\Cli();
 
 $app = new \Goliath\Cli(array(
     'debug' => true,
