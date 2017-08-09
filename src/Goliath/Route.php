@@ -125,7 +125,7 @@ class Route
      *
      * @return string
      */
-    public function getHelpText()
+    public function getHelp()
     {
         return $this->helpText;
     }
@@ -136,7 +136,7 @@ class Route
      * @param string $helpText
      * @return Goliath\Route
      */
-    public function setHelpText($helpText)
+    public function setHelp($helpText)
     {
         $this->helpText = $helpText;
 

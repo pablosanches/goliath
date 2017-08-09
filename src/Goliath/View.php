@@ -34,7 +34,7 @@ class View
      * @param string $value
      * @return Goliath\View
      */
-    public function setVar($name, $value)
+    public function set($name, $value)
     {
         $this->_vars[$name] = $value;
 
