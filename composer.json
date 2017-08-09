@@ -1,0 +1,24 @@
+{
+    "name": "pablosanches/goliath",
+    "description": "A simple framework to facilitate the development of CLI applications based on PHP command.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pablo Sanches",
+            "email": "sanches.webmaster@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Goliath\\": "src"
+        }
+    }
+}
