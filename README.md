@@ -1,5 +1,7 @@
-Goliath
-=======
+<p align="center">
+    <img src="http://i.imgur.com/va7E8tX.png" width="160px">
+</p>
+
 A simple framework to facilitate the development of CLI applications based on PHP command.
 
 Features
