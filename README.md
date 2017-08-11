@@ -3,6 +3,8 @@
 </p>
 
 [![Build Status](https://travis-ci.org/pablosanches/goliath.svg?branch=master)](https://travis-ci.org/pablosanches/goliath)
+[![CodeClimate](http://img.shields.io/codeclimate/github/pablosanches/goliath.svg?style=flat)](https://codeclimate.com/github/pablosanches/goliath)
+[![Version](http://img.shields.io/packagist/v/pablosanches/goliath.svg?style=flat)](https://packagist.org/packages/pablosanches/goliath)
 
 A simple framework to facilitate the development of CLI applications based on PHP command.
 
