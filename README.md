@@ -44,7 +44,7 @@ Installation
 You only need to include the depency in the composer.
 ```json
 "require": {
-    "pablosanches/goliath": "dev-master"
+    "pablosanches/goliath": "1.0.*"
 }
 ```
 
