@@ -3,6 +3,8 @@
     "description": "A simple framework to facilitate the development of CLI applications based on PHP command.",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "stable",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Pablo Sanches",
