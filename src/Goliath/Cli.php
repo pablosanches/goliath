@@ -200,7 +200,6 @@ class Cli
      */
     public static function autoload($class)
     {
-        exit('A');
         if (strpos($class, 'Cli') !== 0) {
             return;
         }
@@ -240,10 +239,10 @@ class Cli
             $this->_userNotFound = $isCallable;
             return;
         } else if (!is_null($isCallable)) {
-            throw new Exception('Passed a non callable function.');
+            throw new \Exception('Passed a non callable function.');
         } else if (!is_null($this->_userNotFound)) {
             call_user_func($this->_userNotFound);
-            exit;
+            return;
         }
 
         $str = 'Usage: ' . $this->appname . " [OPTION]...\n";
@@ -313,7 +312,7 @@ class Cli
     public function run()
     {
         if (PHP_SAPI !== 'cli') {
-            throw new Exception('This is a Command Line Application.');
+            throw new \Exception('This is a Command Line Application.');
         }
 
         try {
@@ -356,11 +355,11 @@ class Cli
                 echo $this->notFound();
             }
 
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             if ($this->option('debug')) {
-                throw new Exception($e);
+                throw new \Exception($e);
             } else {
-                die("ERROR: " . $e->getMessage() . "\n");
+                return "ERROR: " . $e->getMessage() . "\n";
             }
         }
     }

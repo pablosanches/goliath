@@ -127,16 +127,16 @@ class Logger
         if ($logDirectory === false) {
             if (count(self::$_instances) > 0) {
                 return current(self::$_instances);
-            } else {
-                $logDirectory = dirname(__FILE__);
             }
+
+            $logDirectory = dirname(__FILE__);
         }
 
         if (in_array($logDirectory, self::$_instances)) {
             return self::$_instances[$logDirectory];
         }
 
-        self::$_instances[$logDirectory] = new self($logDirectory, $severity);
+        self::$_instances[$logDirectory] = new self($logDirectory, $severity, null);
 
         return self::$_instances[$logDirectory];
     }
@@ -194,7 +194,7 @@ class Logger
     *
     * @return void
     */
-    public function debug($line, $args = self::NO_ARGUMENTS)
+    public function debug($line)
     {
         $this->log($line, self::DEBUG);
     }

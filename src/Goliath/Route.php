@@ -82,7 +82,7 @@ class Route
                 $this->_stdin = fopen('php://stdin', 'r');
 
                 if (!$this->_stdin) {
-                    throw new RuntimeException('Unable to open STDIN.');
+                    throw new \RuntimeException('Unable to open STDIN.');
                 }
 
                 $this->isOption = false;
@@ -148,7 +148,7 @@ class Route
      *
      * @return boolean
      */
-    public function getIsCallable()
+    public function isCallable()
     {
         return $this->isCallable;
     }
